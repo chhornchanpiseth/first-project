@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Free Web tutorials" />
+		<meta name="keywords" content="Rean24, HTML, CSS, JavaScript" />
+		<meta name="author" content="Den Chuch">
+		<meta name="language" content="en" />
+		<link rel='shortcut icon' href="https://ceo-cambodia.com/my_addons/theme/favicon.ico" />
+		<title>JS Day 10 | Rean24</title>
+		
+	</head>
+	<body>
+		<script type = "text/javascript">
+			function myfunction() {
+				var num_1 = document.getElementById("num1").value;
+				var num_2 = document.getElementById("num2").value;
+				var total = parseInt(num_1) * parseInt(num_2);
+				
+				document.getElementById("calculus").innerHTML = total
+			}
+		
+		</script>
+		
+		<div style = "background-color : #efefef ; margin  : auto ; width : 600px";>
+			<table width = "100%" style= "border-collapse:collapse;" cellpadding = "15">
+				<tr>
+					<td><input type = "text" name = "num1" id = "num1"/></td>
+					<td>*</td>
+					<td><input type = "text" name = "num2" id = "num2"/></td>
+					<td>=</td>
+					<td id = "calculus"></td>
+				</tr>
+				
+				<tr>
+					<td colspan = "3"; style = "text-align:center ;"><button type = "button" onclick="myfunction()">Try it</button></td>
+				</tr>
+				
+			</table>
+		</div>
+		
+		
+	</body>
+			
+</html>

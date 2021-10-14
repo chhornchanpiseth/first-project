@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Free Web tutorials" />
+		<meta name="keywords" content="Rean24, HTML, CSS, JavaScript" />
+		<meta name="author" content="Den Chuch">
+		<meta name="language" content="en" />
+		<link rel='shortcut icon' href="https://ceo-cambodia.com/my_addons/theme/favicon.ico" />
+		<title>JS Day 3 | Rean24</title>
+	</head>
+	
+	<body>
+		<div id="myOutput" style="font-size:32px; background-color:blue; color:#fff; text-align:center; padding:50px;"></div>
+		
+		<script type="text/javascript">
+			var a, b, c, d, e, f; 
+			a = 1;
+			b = 2;
+			c = 3;
+			d = 4;
+			e = 5;
+			f = 10;
+			/*
+			var person = {           // hav tha write tam "Key Value"
+			  first_name: "John",
+			  last_name: "Doe",
+			  age: 50,
+			  eye_color: "blue"
+			};
+			
+			var rest = "<p>Name: "+person.first_name +" "+ person.last_name+"</p>";
+			rest += "<p>Age: "+person.age+"</p>";
+			rest += "<p>Eye: "+person.eye_color+"</p>";
+			document.getElementById("myOutput").innerHTML = rest;*/
+			
+			
+			var person = [            // hav tha write tam "Array Index"
+			  "John", //index 0
+			  "Doe", // index 1
+			  50, //index 2
+			  "blue" //index 3
+			];
+			
+			var rest = "<p>Name: "+person[0] +" "+ person[1]+"</p>";
+			rest += "<p>Age: "+person[2]+"</p>";
+			rest += "<p>Eye: "+person[3]+"</p>";
+			document.getElementById("myOutput").innerHTML = rest;
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Free Web tutorials" />
+		<meta name="keywords" content="Rean24, HTML, CSS, JavaScript" />
+		<meta name="author" content="Den Chuch">
+		<meta name="language" content="en" />
+		<link rel='shortcut icon' href="https://ceo-cambodia.com/my_addons/theme/favicon.ico" />
+		<title>JS Day 11 | Rean24</title>
+		
+		<script type="text/javascript">
+			function my_function(){
+				var num_1 = document.getElementById("num_1").value;
+				var num_2 = document.getElementById("num_2").value;
+				var total = parseFloat(num_1) + parseFloat(num_2);
+				document.getElementById("calc").innerHTML = total;
+			}
+			
+			//CONDITION
+			var a = 10;
+			if(a < 10){
+				//alert(0);
+			}else{
+				//alert(1);
+			}
+			
+			if(a < 10){
+				//alert(0);
+			}else if(a == 10){
+				//alert(1);
+			}else{
+				//alert(2);
+			}
+			
+			//LOOP
+			for(i=0; i<10; i++){
+				//alert(i);
+			}
+			
+			var i = 0;
+			while(i < 10){
+				i++;
+				//alert(i);
+			}
+			
+			//ARRAY
+			var fruit = [
+				"Apple",
+				"Banana",
+				"Orange"
+			];
+			
+			//alert(fruit[2]);
+			
+			var person = [
+				["Apple", "M", "4"], //***********0
+				["Banana", "F", "5"], //***********1
+				["Orange", "F", "6"], //*******2
+				["OK", "M", "7"] //************3
+			];
+			
+			//alert(person[2][0]);
+			
+			//BUILD IN FUNCTIONS
+			//alert(person.length);
+			var txt = "Hello world";
+			var rest = txt.replace("world", 'new year');
+			alert(rest);
+		</script>
+	</head>
+	
+	<body>
+		<div style="width:600px; margin:auto; background:#efefef;">
+			<table width="100%" style="border-collapse: collapse;" cellpadding="15">
+				<tr>
+					<td><input type="text" name="num_1" id="num_1" /></td>
+					<td>+</td>
+					<td><input type="text" name="num_2" id="num_2" /></td>
+					<td>=</td>
+					<td id="calc"></td>
+				</tr>
+				
+				<tr>
+					<td colspan="5" style="text-align:center;"><button type="button" onclick="my_function()">Try it</button></td>
+				</tr>
+			</table>
+		</div>
+		<br/><br/><br/><br/>
+		<h3>Student Lists</h3>
+		<table width="100%" border="1" style="border-collapse: collapse;" id="result">
+		  <tr>
+			<th width="100">No.</th>
+			<th>Name</td>
+			<th>Sex</td>
+			<th>Age</td>
+		  </tr>
+		</table>
+		
+		
+		<script type="text/javascript">
+			var person = [
+				["Apple", "M", "4"], //***********0
+				["Banana", "F", "5"], //***********1
+				["Orange", "F", "6"], //*******2
+				["OK", "M", "7"] //************3
+			];
+			
+			var html = document.getElementById("result");
+			
+			for(i=0; i < person.length; i++){
+				var j = i + 1;
+				html.innerHTML += "<tr><td>"+j+"</td><td>"+person[i][0]+"</td><td>"+person[i][1]+"</td><td>"+person[i][2]+"</td></tr>";
+			}
+			
+			console.log("Hello World");
+		</script>
+		
+	</body>
+</html>
